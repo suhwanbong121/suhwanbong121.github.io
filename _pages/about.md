@@ -24,7 +24,7 @@ For further details about my academic background, research experience, and publi
 News
 ------
 <font size="2"> 
-<strong>May 2024</strong> : My paper, "Differential Recall Bias in Estimating Treatment Effect in Observational Studies", has been accepted in *Biometrics*. <br>
+<strong>May 2024</strong> : My paper "Differential Recall Bias in Estimating Treatment Effect in Observational Studies" has been accepted in Biometrics. <br>
 <strong>April 2024</strong> : I have decided to pursue my PhD in Biostatistics at Harvard University. <br>
 <strong>February 2024</strong> : I got my master's degree at SNU! <br>
 <strong>August 2023</strong> : I was selected as a recipient of the KFAS Overseas Ph.D. Scholarship by Korea Foundation for Advanced Studies.<br>
@@ -33,4 +33,4 @@ News
 
 Contact
 ------
-Feel free to email me at suhwanbong@g.harvard.edu.
+Feel free to contact me via email: suhwanbong@g.harvard.edu.
