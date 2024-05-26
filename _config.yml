@@ -137,9 +137,9 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-gtag" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
-    tracking_id          : "G-0NJETRH8PL"
+    tracking_id          : "G-BYLD3KFF7E"
 
 
 # Reading Files
