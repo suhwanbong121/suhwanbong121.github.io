@@ -20,9 +20,9 @@ Publications
 
 Presentations
 ------
-1. Korean Statistical Society Conference, Poster Presentation (Seoul, Korea) - Winter 2023
-1. 6th International Conference on Econometrics and Statistics, Organized Invited Session (Tokyo, Japan) - Summer 2023
-1. Korean Statistical Society Conference, Poster Presentation (Selected for the top 10% awards, Jeju, Korea) - Winter 2022
+1. Korean Statistical Society Conference, Poster Presentation, Seoul, South Korea, Dec. 2023.
+1. 6th International Conference on Econometrics and Statistics, Organized Invited Session, Tokyo, Japan, Aug. 2023.
+1. Korean Statistical Society Conference, Poster Presentation (Selected for the top 10% awards), Jeju, South Korea, Dec. 2022.
 
 
 [recall]: https://arxiv.org/abs/2307.02331
