@@ -5,7 +5,7 @@ permalink: /teaching/
 author_profile: true
 ---
 
-Teaching Assistant
+Teaching Assistant (TA)
 ---
 **Graduate Courses  (Department of Statistics, SNU)**
 - Spring 2024 : *Causal Inference (M1399.001200)*
