@@ -13,7 +13,7 @@ Hi, I'm **Suhwan Bong**!
 
 I am an incoming Biostatistics PhD student at the Harvard T.H. Chan School of Public Health.
 
-I completed my master's degree in statistics at Seoul National University (SNU) under the guidance of Professor [Kwonsang Lee][https://www.kwonsanglee.com/]. Prior to beginning my MS, I earned my bachelor's degree in statistics and mathematics at SNU. My primary research focuses on the field of causal inference and its applications in biomedical data.
+I completed my master's degree in statistics at Seoul National University (SNU) under the guidance of Professor [Kwonsang Lee](https://www.kwonsanglee.com/). Prior to beginning my MS, I earned my bachelor's degree in statistics and mathematics at SNU. My primary research focuses on the field of causal inference and its applications in biomedical data.
 
 Outside of studying, I enjoy working out and playing tennis. For further information about my academic background and research experience, please refer to my comprehensive [CV](../files/SuhwanbongCV.pdf).
 
@@ -58,6 +58,7 @@ Many people use a git client to create files on their local computer and then pu
 Example: editing a markdown file for a talk
 ![Editing a markdown file for a talk](/images/editing-talk.png)
 
-For more info
+Contact
 ------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+Email:	suhwanbong121@gmail.com (personal),
+suhwanbong@g.harvard.edu (academic).
