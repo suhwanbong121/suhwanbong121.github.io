@@ -7,6 +7,8 @@ redirect_from:
   - /about.html
 ---
 
+<center><img src="../images/SuhwanBong2.jpeg" width="250"></center>
+
 Hi, I'm **Suhwan Bong**!
 
 I am an incoming Biostatistics PhD student at the Harvard T.H. Chan School of Public Health.
