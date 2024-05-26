@@ -23,8 +23,10 @@ For further details about my academic background, research experience, and publi
 
 News
 ------
-<font size="2"> <strong>April 2024</strong> : I have decided to pursue my PhD in Biostatistics at Harvard University. <br>
-<strong>February 2024</strong> : I got my master's degree in statistics at SNU! <br>
+<font size="2"> 
+<strong>May 2024</strong> : My paper, "Differential Recall Bias in Estimating Treatment Effect in Observational Studies", has been accepted in *Biometrics*. <br>
+<strong>April 2024</strong> : I have decided to pursue my PhD in Biostatistics at Harvard University. <br>
+<strong>February 2024</strong> : I got my master's degree at SNU! <br>
 <strong>August 2023</strong> : I was selected as a recipient of the KFAS Overseas Ph.D. Scholarship by Korea Foundation for Advanced Studies.<br>
 <strong>December 2022</strong> : I received the Outstanding Poster Presentation Award at the Korean Statistical Society Conference.<br>
 <strong>December 2022</strong> : I was honored as the Best Teaching Assistant of the Semester by the Department of Statistics at SNU.<br> </font>
