@@ -11,7 +11,7 @@ Hi, I'm **Suhwan Bong**!
 
 I am an incoming Biostatistics PhD student at the Harvard T.H. Chan School of Public Health.
 
-I completed my master's degree in statistics at Seoul National University (SNU) under the guidance of Professor [Kwonsang Lee][Lee]. Prior to beginning my MS, I earned my bachelor's degree in statistics and mathematics at SNU. My primary research focuses on the field of causal inference and its applications in biomedical data.
+I completed my master's degree in statistics at Seoul National University (SNU) under the guidance of Professor [Kwonsang Lee][https://www.kwonsanglee.com/]. Prior to beginning my MS, I earned my bachelor's degree in statistics and mathematics at SNU. My primary research focuses on the field of causal inference and its applications in biomedical data.
 
 Outside of studying, I enjoy working out and playing tennis. For further information about my academic background and research experience, please refer to my comprehensive [CV](../files/SuhwanbongCV.pdf).
 
@@ -43,7 +43,11 @@ For site content, there is one markdown file for each type of content, which are
 
 **News**
 
-<font size="2"> <strong>April 2024</strong> : I have decided to pursue my PhD in Biostatistics at Harvard University. <br> <strong>February 2024</strong> : I got my master's degree in statistics at SNU! <br> <strong>August 2023</strong> : I was selected as a recipient of the <strong>KFAS Overseas Ph.D. Scholarship</strong> by Korea Foundation for Advanced Studies.<br>  <strong>December 2022</strong> : I received the <strong>Outstanding Poster Presentation Award</strong> at the Korean Statistical Society Conference.<br> <strong>December 2022</strong> : I was honored as the <strong>Best Teaching Assistant of the Semester</strong> by the Department of Statistics at SNU.<br> </font>
+<font size="2"> <strong>April 2024</strong> : I have decided to pursue my PhD in Biostatistics at Harvard University. <br>
+<strong>February 2024</strong> : I got my master's degree in statistics at SNU! <br>
+<strong>August 2023</strong> : I was selected as a recipient of the KFAS Overseas Ph.D. Scholarship by Korea Foundation for Advanced Studies.<br>
+<strong>December 2022</strong> : I received the Outstanding Poster Presentation Award at the Korean Statistical Society Conference.<br>
+<strong>December 2022</strong> : I was honored as the Best Teaching Assistant of the Semester by the Department of Statistics at SNU.<br> </font>
 
 How to edit your site's GitHub repository
 ------
@@ -55,6 +59,3 @@ Example: editing a markdown file for a talk
 For more info
 ------
 More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
-
-
-[Lee]: https://www.kwonsanglee.com/
