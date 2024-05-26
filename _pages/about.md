@@ -11,11 +11,25 @@ redirect_from:
 
 Hi, I'm **Suhwan Bong**!
 
-I am an incoming Biostatistics PhD student at the Harvard T.H. Chan School of Public Health.
+I am an incoming Biostatistics PhD student at the Harvard T.H. Chan School of Public Health. I completed my master’s degree in Statistics at Seoul National University (SNU), where I was mentored by Professor [Kwonsang Lee](https://www.kwonsanglee.com/). Prior to my MS, I earned a bachelor’s degree in Statistics and Mathematics, also at SNU.
 
-I completed my master's degree in statistics at Seoul National University (SNU) under the guidance of Professor [Kwonsang Lee](https://www.kwonsanglee.com/). Prior to beginning my MS, I earned my bachelor's degree in statistics and mathematics at SNU. My primary research focuses on the field of causal inference and its applications in biomedical data.
+My primary research interests lie in the broad field of causal inference and its applications in biomedical data. I am passionate about developing and applying statistical methods to uncover meaningful insights from complex datasets, aiming to contribute to advancements in public health.
 
-Outside of studying, I enjoy working out and playing tennis. For further information about my academic background and research experience, please refer to my comprehensive [CV](../files/SuhwanbongCV.pdf).
+Outside of my academic pursuits, I enjoy staying active through working out and playing tennis. I also enjoy watching baseball and soccer games in my free time.
+
+For further details about my academic background, research experience, and publications, please refer to my comprehensive [CV](../files/SuhwanbongCV.pdf).
+
+
+
+Hi, I’m Suhwan Bong!
+
+I am an incoming Biostatistics PhD student at the Harvard T.H. Chan School of Public Health. I completed my master’s degree in Statistics at Seoul National University (SNU), where I was mentored by Professor Kwonsang Lee. Prior to my MS, I earned a bachelor’s degree in Statistics and Mathematics, also at SNU.
+
+My primary research interests lie in the field of causal inference and its applications in biomedical data. I am passionate about developing and applying statistical methods to uncover meaningful insights from complex datasets, aiming to contribute to advancements in public health and medicine.
+
+Outside of my academic pursuits, I enjoy staying active through working out and playing tennis. These activities help me maintain a balanced and healthy lifestyle, providing a necessary counterbalance to my rigorous studies.
+
+For further details about my academic background, research experience, and publications, please refer to my comprehensive CV.
 
 
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
@@ -60,5 +74,5 @@ Example: editing a markdown file for a talk
 
 Contact
 ------
-Email:	suhwanbong121@gmail.com (personal),
+suhwanbong121@gmail.com (personal), <br>
 suhwanbong@g.harvard.edu (academic).
