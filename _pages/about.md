@@ -19,8 +19,10 @@ Outside of my academic pursuits, I enjoy staying active through working out and 
 
 For further details about my academic background, research experience, and publications, please refer to my comprehensive [CV](../files/SuhwanbongCV.pdf).
 
-**News**
 
+
+News
+------
 <font size="2"> <strong>April 2024</strong> : I have decided to pursue my PhD in Biostatistics at Harvard University. <br>
 <strong>February 2024</strong> : I got my master's degree in statistics at SNU! <br>
 <strong>August 2023</strong> : I was selected as a recipient of the KFAS Overseas Ph.D. Scholarship by Korea Foundation for Advanced Studies.<br>
