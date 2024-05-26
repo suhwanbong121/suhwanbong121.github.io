@@ -21,7 +21,7 @@ repository               : "suhwanbong121/suhwanbong121.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/SuhwanBong.jpeg"
+  avatar           : "../images/SuhwanBong.jpeg"
   name             : "Suhwan Bong"
   pronouns         : # example: "she/her"  
   bio              : "PhD Student at Harvard University"
