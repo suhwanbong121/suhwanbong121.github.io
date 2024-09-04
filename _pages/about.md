@@ -9,13 +9,11 @@ redirect_from:
 
 <center><img src="../images/SuhwanBong2.jpeg" width="250"></center>
 
-Hi, I'm Suhwan Bong!
+Hi, I'm **Suhwan Bong**!
 
 I am a biostatistics PhD student at the Harvard T.H. Chan School of Public Health. My primary research interests lie in the broad field of causal inference and its applications in biomedical data. I am passionate about developing and applying statistical methods to uncover meaningful insights from complex datasets, aiming to contribute to advancements in public health.
 
 I completed my master’s degree in Statistics at Seoul National University (SNU), where I was mentored by Professor [Kwonsang Lee](https://www.kwonsanglee.com/). Prior to my MS, I earned a bachelor’s degree in Statistics and Mathematics, also at SNU.
-
-Outside of my academic pursuits, I enjoy staying active through working out and playing tennis. I also enjoy watching baseball and soccer games in my free time.
 
 For further details about my academic background, research experience, and publications, please refer to my comprehensive [CV](../files/SuhwanbongCV.pdf).
 
