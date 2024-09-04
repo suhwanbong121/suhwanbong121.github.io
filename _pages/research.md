@@ -14,8 +14,8 @@ Research Interests
 
 Publications
 ------
-1. Bong, S., Lee, K. and Dominici, F. (2024).  **Differential recall bias in estimating treatment effects in observational studies**. *Biometrics*, 80(2). [arXiv][recall]
-1. Bong, S. and Lee, K. (2024).  **Local causal effects with continuous exposures: A matching estimator for the average causal derivative effect**. *Preprint, To be submitted*. [arXiv][local]
+1. Bong, S., Lee, K. and Dominici, F. (2024).  **Differential recall bias in estimating treatment effects in observational studies**. *Biometrics*, 80(2). [link][recall]
+1. Bong, S. and Lee, K. (2024).  **Local causal effects with continuous exposures: A matching estimator for the average causal derivative effect**. *Preprint, To be submitted*. [link][local]
 
 
 [recall]: https://doi.org/10.1093/biomtc/ujae058
