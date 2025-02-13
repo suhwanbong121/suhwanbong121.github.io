@@ -57,4 +57,4 @@ jobs:
         git config --global user.email "actions@github.com"
         git add papers.json
         git commit -m "Update arXiv papers" || exit 0
-        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:master
