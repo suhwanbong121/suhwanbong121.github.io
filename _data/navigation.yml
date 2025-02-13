@@ -22,7 +22,7 @@ main:
   #   url: /year-archive/
 
   - title: "Course"
-  url: /course/
+    url: /course/
     
   - title: "CV"
     url: /cv/
