@@ -60,7 +60,8 @@ This page auto-updates with the latest papers from arXiv with the keywords 'Caus
     <script>
         async function fetchPapers() {
             try {
-                const response = await fetch("https://export.arxiv.org/api/query?search_query=all:causal+inference&start=0&max_results=5");
+                const response = await fetch("https://raw.githubusercontent.com/your-username/your-repo/main/papers.json");
+                // const response = await fetch("https://export.arxiv.org/api/query?search_query=all:causal+inference&start=0&max_results=5");
                 const text = await response.text();
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(text, 'application/xml');
