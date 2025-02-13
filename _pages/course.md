@@ -5,9 +5,10 @@ permalink: /course/
 author_profile: true
 ---
 
-Current Coursework
+Course Project
 ------
-course
+**Department of Biotatistics, Harvard**
+- [*Computing 1*](/course/computing1)
 
 
 Teaching Assistant (TA)
