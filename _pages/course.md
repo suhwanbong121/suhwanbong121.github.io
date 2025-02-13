@@ -8,8 +8,9 @@ author_profile: true
 Course Project
 ------
 **Department of Biotatistics, Harvard**
-- [*Computing 1*](/course/computing1)
+- [*Computing 1*](/course/computing)
 
+<br>
 
 Teaching Assistant (TA)
 ------
