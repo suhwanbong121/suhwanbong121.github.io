@@ -1,0 +1,28 @@
+name: Update Latest Papers
+
+on:
+  schedule:
+    - cron: '*/1 * * * *' # Runs every minute
+    # - cron: '0 0 * * *' # Runs every midnight
+  workflow_dispatch:
+
+jobs:
+  update-papers:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Update latest papers
+        run: |
+          # Fetch the latest papers and update the HTML file
+          curl -s "https://export.arxiv.org/api/query?search_query=all:machine learning&start=0&max_results=10&sortBy=submittedDate&sortOrder=descending" > _pages/latest-papers.html
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add _pages/latest-papers.html
+          git commit -m 'Update latest papers from arXiv'
+          git push

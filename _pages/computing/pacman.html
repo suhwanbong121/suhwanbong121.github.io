@@ -4,5 +4,65 @@ title: "Pac-Man Game"
 permalink: /course/computing/pacman/
 author_profile: true
 ---
+<!-- Pac-Man Game Container -->
+<div id="pacman-container" style="width: 500px; height: 500px; border: 1px solid #000;"></div>
 
-<p>Play the Pac-Man game.</p>
+<!-- Pac-Man Game Script -->
+<script>
+  // Simple Pac-Man game implementation
+  const canvas = document.createElement('canvas');
+  canvas.width = 500;
+  canvas.height = 500;
+  document.getElementById('pacman-container').appendChild(canvas);
+  const ctx = canvas.getContext('2d');
+
+  // Game variables
+  let pacman = { x: 50, y: 50, size: 20, dx: 2, dy: 0 };
+  let food = { x: 100, y: 100, size: 10 };
+
+  // Draw Pac-Man
+  function drawPacman() {
+    ctx.fillStyle = 'yellow';
+    ctx.beginPath();
+    ctx.arc(pacman.x, pacman.y, pacman.size, 0.2 * Math.PI, 1.8 * Math.PI);
+    ctx.lineTo(pacman.x, pacman.y);
+    ctx.fill();
+  }
+
+  // Draw food
+  function drawFood() {
+    ctx.fillStyle = 'red';
+    ctx.fillRect(food.x, food.y, food.size, food.size);
+  }
+
+  // Update game state
+  function update() {
+    pacman.x += pacman.dx;
+    pacman.y += pacman.dy;
+
+    // Check for collisions with walls
+    if (pacman.x < 0 || pacman.x > canvas.width || pacman.y < 0 || pacman.y > canvas.height) {
+      pacman.dx = -pacman.dx;
+      pacman.dy = -pacman.dy;
+    }
+
+    // Check for collisions with food
+    if (pacman.x < food.x + food.size && pacman.x + pacman.size > food.x &&
+        pacman.y < food.y + food.size && pacman.y + pacman.size > food.y) {
+      food.x = Math.random() * (canvas.width - food.size);
+      food.y = Math.random() * (canvas.height - food.size);
+    }
+  }
+
+  // Game loop
+  function gameLoop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawPacman();
+    drawFood();
+    update();
+    requestAnimationFrame(gameLoop);
+  }
+
+  // Start game loop
+  gameLoop();
+</script>

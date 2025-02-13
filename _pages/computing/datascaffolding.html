@@ -4,4 +4,40 @@ title: "Data Scaffolding"
 permalink: /course/computing/datascaffolding/
 author_profile: true
 ---
-<p>Data scaffolding content goes here.</p>
+<div id="papers-container">
+    <p>Loading latest papers...</p>
+  </div>
+  
+  <script>
+    async function fetchLatestPapers() {
+      const keywords = 'machine learning'; // Change this to your desired keywords
+      const response = await fetch(`https://export.arxiv.org/api/query?search_query=all:${keywords}&start=0&max_results=10&sortBy=submittedDate&sortOrder=descending`);
+      const text = await response.text();
+      const parser = new DOMParser();
+      const xml = parser.parseFromString(text, 'application/xml');
+      const entries = xml.querySelectorAll('entry');
+      const container = document.getElementById('papers-container');
+      container.innerHTML = '';
+  
+      entries.forEach(entry => {
+        const title = entry.querySelector('title').textContent;
+        const authors = Array.from(entry.querySelectorAll('author > name')).map(author => author.textContent).join(', ');
+        const summary = entry.querySelector('summary').textContent;
+        const pdfLink = entry.querySelector('link[title="pdf"]').getAttribute('href');
+  
+        const paperDiv = document.createElement('div');
+        paperDiv.classList.add('paper');
+  
+        paperDiv.innerHTML = `
+          <h2>${title}</h2>
+          <p><strong>Authors:</strong> ${authors}</p>
+          <p>${summary}</p>
+          <p><a href="${pdfLink}" target="_blank">Read PDF</a></p>
+        `;
+  
+        container.appendChild(paperDiv);
+      });
+    }
+  
+    fetchLatestPapers();
+  </script>
