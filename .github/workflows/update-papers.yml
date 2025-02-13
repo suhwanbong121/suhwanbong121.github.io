@@ -10,9 +10,14 @@ jobs:
   update:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write  # Allow push permissions
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        persist-credentials: false  # Use a token instead
 
     - name: Fetch latest arXiv papers
       run: |
@@ -47,11 +52,9 @@ jobs:
         EOF
 
     - name: Commit and push changes
-      env:
-        GH_PAT: ${{ secrets.GH_PAT }}
       run: |
-        git config --global user.name "suhwanbong121"
-        git config --global user.email "suhwanbong121@gmail.com"
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "actions@github.com"
         git add papers.json
-        git commit -m "Update arXiv papers"
-        git push https://x-access-token:${GH_PAT}@github.com/suhwanbong121/suhwanbong121.github.io.git master
+        git commit -m "Update arXiv papers" || exit 0
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
