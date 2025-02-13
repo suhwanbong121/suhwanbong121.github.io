@@ -7,23 +7,49 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-papers:
+  update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Update latest papers
-        run: |
-          # Fetch the latest papers and update the HTML file
-          curl -s "https://export.arxiv.org/api/query?search_query=all:machine learning&start=0&max_results=10&sortBy=submittedDate&sortOrder=descending" > _pages/latest-papers.html
+    - name: Fetch latest arXiv papers
+      run: |
+        curl -s "http://export.arxiv.org/api/query?search_query=all:causal+inference&start=0&max_results=5" > papers.xml
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git pull origin main
-          git add _pages/latest-papers.html
-          git commit -m 'Update latest papers from arXiv'
-          git push origin main
+    - name: Convert XML to JSON
+      run: |
+        python - <<EOF
+        import xml.etree.ElementTree as ET
+        import json
+
+        tree = ET.parse('papers.xml')
+        root = tree.getroot()
+
+        ns = {'arxiv': 'http://www.w3.org/2005/Atom'}
+        papers = []
+        for entry in root.findall('arxiv:entry', ns):
+            title = entry.find('arxiv:title', ns).text
+            authors = [a.find('arxiv:name', ns).text for a in entry.findall('arxiv:author', ns)]
+            summary = entry.find('arxiv:summary', ns).text
+            link = entry.find('arxiv:id', ns).text
+
+            papers.append({
+                "title": title,
+                "authors": ", ".join(authors),
+                "summary": summary,
+                "link": link
+            })
+
+        with open("papers.json", "w") as f:
+            json.dump(papers, f, indent=4)
+        EOF
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "suhwanbong121"
+        git config --global user.email "suhwanbong121@gmail.com"
+        git add papers.json
+        git commit -m "Update arXiv papers"
+        git push
