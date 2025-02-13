@@ -7,7 +7,7 @@ author_profile: true
 
 Course Project
 ------
-**Department of Biotatistics, Harvard**
+**Department of Biotatistics, Harvard University**
 - Spring 2025 : [*Computing 1*](/course/computing)
 
 <br>
