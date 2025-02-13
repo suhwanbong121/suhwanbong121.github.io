@@ -2,8 +2,8 @@ name: Update Latest Papers
 
 on:
   schedule:
-    - cron: '*/1 * * * *' # Runs every minute
-    # - cron: '0 0 * * *' # Runs every midnight
+    # - cron: '*/1 * * * *' # Runs every minute
+    - cron: '0 0 * * *' # Runs every midnight
   workflow_dispatch:
 
 jobs:
@@ -55,7 +55,6 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "actions@github.com"
-        git pull origin main
         git add papers.json
         git commit -m "Update arXiv papers" || exit 0
         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
