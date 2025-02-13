@@ -59,33 +59,71 @@ This page auto-updates with the latest papers from arXiv with the keywords 'Caus
 
     <script>
         async function fetchPapers() {
-            try {
-                // ✅ Correct GitHub raw URL
-                const response = await fetch("https://raw.githubusercontent.com/suhwanbong121/suhwanbong121.github.io/master/papers.json");
+        try {
+            const url = "https://raw.githubusercontent.com/suhwanbong121/suhwanbong121.github.io/master/papers.json";
+            console.log("Fetching JSON from:", url);
 
-                // ✅ Parse JSON properly
-                const papers = await response.json();
+            const response = await fetch(url);
+            console.log("Response status:", response.status);
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
 
-                let html = "";
-                papers.forEach(paper => {
-                    html += `
-                        <div class="paper">
-                            <div class="title">${paper.title}</div>
-                            <div class="authors">Authors: ${paper.authors}</div>
-                            <div class="abstract">${paper.summary}</div>
-                            <a class="link" href="${paper.link}" target="_blank">Read full paper</a>
-                        </div>
-                    `;
-                });
+            const text = await response.text();
+            console.log("Raw JSON response:", text); // Log raw JSON before parsing
 
-                document.getElementById("paper-list").innerHTML = html;
+            const papers = JSON.parse(text);
+            console.log("Parsed JSON data:", papers); // Log parsed JSON array
+
+            let html = "";
+            papers.forEach((paper, index) => {
+                console.log(`Processing paper #${index + 1}:`, paper); // Log each paper entry
+                html += `
+                    <div class="paper">
+                        <div class="title">${paper.title}</div>
+                        <div class="authors">Authors: ${paper.authors}</div>
+                        <div class="abstract">${paper.summary}</div>
+                        <a class="link" href="${paper.link}" target="_blank">Read full paper</a>
+                    </div>
+                `;
+            });
+
+            document.getElementById("paper-list").innerHTML = html;
             } catch (error) {
-                document.getElementById("paper-list").innerHTML = "Failed to load papers.";
                 console.error("Error fetching papers:", error);
+                document.getElementById("paper-list").innerHTML = "Failed to load papers.";
             }
         }
-
         fetchPapers();
+        // async function fetchPapers() {
+        //     try {
+        //         // ✅ Correct GitHub raw URL
+        //         const response = await fetch("https://raw.githubusercontent.com/suhwanbong121/suhwanbong121.github.io/master/papers.json");
+
+        //         // ✅ Parse JSON properly
+        //         const papers = await response.json();
+
+        //         let html = "";
+        //         papers.forEach(paper => {
+        //             html += `
+        //                 <div class="paper">
+        //                     <div class="title">${paper.title}</div>
+        //                     <div class="authors">Authors: ${paper.authors}</div>
+        //                     <div class="abstract">${paper.summary}</div>
+        //                     <a class="link" href="${paper.link}" target="_blank">Read full paper</a>
+        //                 </div>
+        //             `;
+        //         });
+
+        //         document.getElementById("paper-list").innerHTML = html;
+        //     } catch (error) {
+        //         document.getElementById("paper-list").innerHTML = "Failed to load papers.";
+        //         console.error("Error fetching papers:", error);
+        //     }
+        // }
+
+        // fetchPapers();
     </script>
 
 </body>
