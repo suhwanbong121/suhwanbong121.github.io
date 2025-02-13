@@ -12,9 +12,9 @@ Course Project
 
 <br>
 
-Teaching Assistant (TA)
+Teaching
 ------
-**Department of Statistics, SNU**
+**Teaching Assistant, Department of Statistics, SNU**
 - Spring 2024 : *Causal Inference (M1399.001200)*
 - Fall 2023 : *Data Analysis and Lab. (M1399.001400)*
 - Spring 2023 : *Mathematical Statistics 1 (326.311)*
