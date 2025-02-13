@@ -5,64 +5,177 @@ permalink: /course/computing/pacman/
 author_profile: true
 ---
 <!-- Pac-Man Game Container -->
-<div id="pacman-container" style="width: 500px; height: 500px; border: 1px solid #000;"></div>
+<!-- <div id="pacman-container" style="width: 500px; height: 500px; border: 1px solid #000;"></div> -->
 
-<!-- Pac-Man Game Script -->
-<script>
-  // Simple Pac-Man game implementation
-  const canvas = document.createElement('canvas');
-  canvas.width = 500;
-  canvas.height = 500;
-  document.getElementById('pacman-container').appendChild(canvas);
-  const ctx = canvas.getContext('2d');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Game</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            color: yellow;
+        }
+        .game-container {
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        canvas {
+            background-color: black;
+            display: block;
+        }
+    </style>
+</head>
+<body>
 
-  // Game variables
-  let pacman = { x: 50, y: 50, size: 20, dx: 2, dy: 0 };
-  let food = { x: 100, y: 100, size: 10 };
+    <h1>Pac-Man Game</h1>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+    </div>
 
-  // Draw Pac-Man
-  function drawPacman() {
-    ctx.fillStyle = 'yellow';
-    ctx.beginPath();
-    ctx.arc(pacman.x, pacman.y, pacman.size, 0.2 * Math.PI, 1.8 * Math.PI);
-    ctx.lineTo(pacman.x, pacman.y);
-    ctx.fill();
-  }
+    <script>
+        const canvas = document.getElementById("gameCanvas");
+        const ctx = canvas.getContext("2d");
 
-  // Draw food
-  function drawFood() {
-    ctx.fillStyle = 'red';
-    ctx.fillRect(food.x, food.y, food.size, food.size);
-  }
+        const tileSize = 20;
+        const rows = canvas.height / tileSize;
+        const cols = canvas.width / tileSize;
 
-  // Update game state
-  function update() {
-    pacman.x += pacman.dx;
-    pacman.y += pacman.dy;
+        let pacman = {
+            x: tileSize * 2,
+            y: tileSize * 2,
+            dx: tileSize,
+            dy: 0,
+            nextDx: tileSize,
+            nextDy: 0,
+            direction: "right"
+        };
 
-    // Check for collisions with walls
-    if (pacman.x < 0 || pacman.x > canvas.width || pacman.y < 0 || pacman.y > canvas.height) {
-      pacman.dx = -pacman.dx;
-      pacman.dy = -pacman.dy;
-    }
+        // Generate food in a square grid pattern
+        let foodItems = [];
+        function generateFood() {
+            foodItems = [];
+            for (let row = 1; row < rows - 1; row += 2) {  // Step of 2 for better spacing
+                for (let col = 1; col < cols - 1; col += 2) {
+                    foodItems.push({
+                        x: col * tileSize,
+                        y: row * tileSize
+                    });
+                }
+            }
+        }
+        generateFood();
 
-    // Check for collisions with food
-    if (pacman.x < food.x + food.size && pacman.x + pacman.size > food.x &&
-        pacman.y < food.y + food.size && pacman.y + pacman.size > food.y) {
-      food.x = Math.random() * (canvas.width - food.size);
-      food.y = Math.random() * (canvas.height - food.size);
-    }
-  }
+        function drawPacman() {
+            ctx.beginPath();
+            let startAngle, endAngle;
+            switch (pacman.direction) {
+                case "right":
+                    startAngle = 0.2 * Math.PI;
+                    endAngle = 1.8 * Math.PI;
+                    break;
+                case "left":
+                    startAngle = 1.2 * Math.PI;
+                    endAngle = 0.8 * Math.PI;
+                    break;
+                case "up":
+                    startAngle = 1.7 * Math.PI;
+                    endAngle = 1.3 * Math.PI;
+                    break;
+                case "down":
+                    startAngle = 0.7 * Math.PI;
+                    endAngle = 0.3 * Math.PI;
+                    break;
+            }
 
-  // Game loop
-  function gameLoop() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawPacman();
-    drawFood();
-    update();
-    requestAnimationFrame(gameLoop);
-  }
+            ctx.arc(pacman.x + tileSize / 2, pacman.y + tileSize / 2, tileSize / 2, startAngle, endAngle);
+            ctx.lineTo(pacman.x + tileSize / 2, pacman.y + tileSize / 2);
+            ctx.fillStyle = "yellow";
+            ctx.fill();
+            ctx.closePath();
+        }
 
-  // Start game loop
-  gameLoop();
-</script>
+        function drawFood() {
+            foodItems.forEach(food => {
+                ctx.fillStyle = "red";
+                ctx.beginPath();
+                ctx.arc(food.x + tileSize / 2, food.y + tileSize / 2, tileSize / 6, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.closePath();
+            });
+        }
+
+        function movePacman() {
+            pacman.dx = pacman.nextDx;
+            pacman.dy = pacman.nextDy;
+
+            pacman.x += pacman.dx;
+            pacman.y += pacman.dy;
+
+            // Screen wrapping
+            if (pacman.x >= canvas.width) pacman.x = 0;
+            if (pacman.x < 0) pacman.x = canvas.width - tileSize;
+            if (pacman.y >= canvas.height) pacman.y = 0;
+            if (pacman.y < 0) pacman.y = canvas.height - tileSize;
+        }
+
+        function checkCollision() {
+            foodItems = foodItems.filter(food => !(pacman.x === food.x && pacman.y === food.y));
+
+            // If all food is eaten, regenerate it
+            if (foodItems.length === 0) {
+                generateFood();
+            }
+        }
+
+        function updateGame() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawFood();
+            drawPacman();
+            movePacman();
+            checkCollision();
+        }
+
+        function changeDirection(event) {
+            const keyPressed = event.keyCode;
+
+            const LEFT = 37;
+            const UP = 38;
+            const RIGHT = 39;
+            const DOWN = 40;
+
+            if (keyPressed === LEFT && pacman.dx === 0) {
+                pacman.nextDx = -tileSize;
+                pacman.nextDy = 0;
+                pacman.direction = "left";
+            } else if (keyPressed === UP && pacman.dy === 0) {
+                pacman.nextDx = 0;
+                pacman.nextDy = -tileSize;
+                pacman.direction = "up";
+            } else if (keyPressed === RIGHT && pacman.dx === 0) {
+                pacman.nextDx = tileSize;
+                pacman.nextDy = 0;
+                pacman.direction = "right";
+            } else if (keyPressed === DOWN && pacman.dy === 0) {
+                pacman.nextDx = 0;
+                pacman.nextDy = tileSize;
+                pacman.direction = "down";
+            }
+        }
+
+        document.addEventListener("keydown", changeDirection);
+        setInterval(updateGame, 150);
+    </script>
+
+</body>
+</html>
