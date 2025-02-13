@@ -60,10 +60,15 @@ This page auto-updates with the latest papers from arXiv with the keywords 'Caus
     <script>
         async function fetchPapers() {
         try {
-            const url = "https://raw.githubusercontent.com/suhwanbong121/suhwanbong121.github.io/master/papers.json";
-            console.log("Fetching JSON from:", url);
+            const url = "https://api.allorigins.win/raw?url=" +
+            encodeURIComponent("https://raw.githubusercontent.com/suhwanbong121/suhwanbong121.github.io/main/papers.json");
 
             const response = await fetch(url);
+
+            // const url = "https://raw.githubusercontent.com/suhwanbong121/suhwanbong121.github.io/master/papers.json";
+            // console.log("Fetching JSON from:", url);
+
+            // const response = await fetch(url);
             console.log("Response status:", response.status);
             
             if (!response.ok) {
