@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Computational Causal Inference",
+        "authors": "Jeffrey C. Wong",
+        "summary": "  We introduce computational causal inference as an interdisciplinary field\nacross causal inference, algorithms design and numerical computing. The field\naims to develop software specializing in causal inference that can analyze\nmassive datasets with a variety of causal effects, in a performant, general,\nand robust way. The focus on software improves research agility, and enables\ncausal inference to be easily integrated into large engineering systems. In\nparticular, we use computational causal inference to deepen the relationship\nbetween causal inference, online experimentation, and algorithmic decision\nmaking.\n  This paper describes the new field, the demand, opportunities for\nscalability, open challenges, and begins the discussion for how the community\ncan unite to solve challenges for scaling causal inference and decision making.\n",
+        "link": "http://arxiv.org/abs/2007.10979v1"
+    },
+    {
+        "title": "Causal inference for process understanding in Earth sciences",
+        "authors": "Adam Massmann, Pierre Gentine, Jakob Runge",
+        "summary": "  There is growing interest in the study of causal methods in the Earth\nsciences. However, most applications have focused on causal discovery, i.e.\ninferring the causal relationships and causal structure from data. This paper\ninstead examines causality through the lens of causal inference and how\nexpert-defined causal graphs, a fundamental from causal theory, can be used to\nclarify assumptions, identify tractable problems, and aid interpretation of\nresults and their causality in Earth science research. We apply causal theory\nto generic graphs of the Earth system to identify where causal inference may be\nmost tractable and useful to address problems in Earth Science, and avoid\npotentially incorrect conclusions. Specifically, causal inference may be useful\nwhen: (1) the effect of interest is only causally affected by the observed\nportion of the state space; or: (2) the cause of interest can be assumed to be\nindependent of the evolution of the system's state; or: (3) the state space of\nthe system is reconstructable from lagged observations of the system. However,\nwe also highlight through examples how causal graphs can be used to explicitly\ndefine and communicate assumptions and hypotheses, and help to structure\nanalyses, even if causal inference is ultimately challenging given the data\navailability, limitations and uncertainties.\n",
+        "link": "http://arxiv.org/abs/2105.00912v1"
+    },
+    {
+        "title": "Causal models on probability spaces",
+        "authors": "Irineo Cabreros, John D. Storey",
+        "summary": "  We describe the interface between measure theoretic probability and causal\ninference by constructing causal models on probability spaces within the\npotential outcomes framework. We find that measure theory provides a precise\nand instructive language for causality and that consideration of the\nprobability spaces underlying causal models offers clarity into central\nconcepts of causal inference. By closely studying simple, instructive examples,\nwe demonstrate insights into causal effects, causal interactions, matching\nprocedures, and randomization. Additionally, we introduce a simple technique\nfor visualizing causal models on probability spaces that is useful both for\ngenerating examples and developing causal intuition. Finally, we provide an\naxiomatic framework for causality and make initial steps towards a formal\ntheory of general causal models.\n",
+        "link": "http://arxiv.org/abs/1907.01672v1"
+    },
+    {
+        "title": "Challenges of Using Text Classifiers for Causal Inference",
+        "authors": "Zach Wood-Doughty, Ilya Shpitser, Mark Dredze",
+        "summary": "  Causal understanding is essential for many kinds of decision-making, but\ncausal inference from observational data has typically only been applied to\nstructured, low-dimensional datasets. While text classifiers produce\nlow-dimensional outputs, their use in causal inference has not previously been\nstudied. To facilitate causal analyses based on language data, we consider the\nrole that text classifiers can play in causal inference through established\nmodeling mechanisms from the causality literature on missing data and\nmeasurement error. We demonstrate how to conduct causal analyses using text\nclassifiers on simulated and Yelp data, and discuss the opportunities and\nchallenges of future work that uses text data in causal inference.\n",
+        "link": "http://arxiv.org/abs/1810.00956v1"
+    },
+    {
+        "title": "Causal programming: inference with structural causal models as finding\n  instances of a relation",
+        "authors": "Joshua Brul\u00e9",
+        "summary": "  This paper proposes a causal inference relation and causal programming as\ngeneral frameworks for causal inference with structural causal models. A tuple,\n$\\langle M, I, Q, F \\rangle$, is an instance of the relation if a formula, $F$,\ncomputes a causal query, $Q$, as a function of known population probabilities,\n$I$, in every model entailed by a set of model assumptions, $M$. Many problems\nin causal inference can be viewed as the problem of enumerating instances of\nthe relation that satisfy given criteria. This unifies a number of previously\nstudied problems, including causal effect identification, causal discovery and\nrecovery from selection bias. In addition, the relation supports formalizing\nnew problems in causal inference with structural causal models, such as the\nproblem of research design. Causal programming is proposed as a further\ngeneralization of causal inference as the problem of finding optimal instances\nof the relation, with respect to a cost function.\n",
+        "link": "http://arxiv.org/abs/1805.01960v1"
+    }
+]
