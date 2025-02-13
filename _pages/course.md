@@ -7,14 +7,11 @@ author_profile: true
 
 Current Coursework
 ------
-**
-
-
+course
 
 
 Teaching Assistant (TA)
 ------
-
 **Department of Statistics, SNU**
 - Spring 2024 : *Causal Inference (M1399.001200)*
 - Fall 2023 : *Data Analysis and Lab. (M1399.001400)*
