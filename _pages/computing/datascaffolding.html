@@ -10,7 +10,7 @@ author_profile: true
   
   <script>
     async function fetchLatestPapers() {
-      const keywords = 'statistics'; // Change this to your desired keywords
+      const keywords = 'machine learning'; // Change this to your desired keywords
       const response = await fetch(`https://export.arxiv.org/api/query?search_query=all:${keywords}&start=0&max_results=10&sortBy=submittedDate&sortOrder=descending`);
       const text = await response.text();
       const parser = new DOMParser();
