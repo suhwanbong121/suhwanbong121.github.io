@@ -4,9 +4,10 @@ title: "Latest Research Papers on Causal Inference"
 permalink: /course/computing/datascaffolding/
 author_profile: true
 ---
-This page auto-updates the latest papers from arXiv with the keywords "Causal Inference" every midnight. The papers are fetched from the arXiv API and displayed here. You can click on the titles to read the full papers.
-
 <br>
+This page auto-updates the latest papers from arXiv with the keywords "Causal Inference" every midnight. The papers are fetched from the arXiv API and displayed here. You can click on the titles to read the full papers.
+<br><br>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,8 +60,21 @@ This page auto-updates the latest papers from arXiv with the keywords "Causal In
     <script>
         async function fetchPapers() {
             try {
-                const response = await fetch("papers.json"); // Load cached papers
-                const papers = await response.json();
+                const response = await fetch("https://export.arxiv.org/api/query?search_query=all:causal+inference&start=0&max_results=5");
+                const text = await response.text();
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(text, 'application/xml');
+                const entries = xml.querySelectorAll('entry');
+                const papers = [];
+
+                entries.forEach(entry => {
+                    const title = entry.querySelector('title').textContent;
+                    const authors = Array.from(entry.querySelectorAll('author > name')).map(author => author.textContent).join(', ');
+                    const summary = entry.querySelector('summary').textContent;
+                    const link = entry.querySelector('link[title="pdf"]').getAttribute('href');
+
+                    papers.push({ title, authors, summary, link });
+                });
 
                 let html = "";
                 papers.forEach(paper => {
@@ -86,4 +100,3 @@ This page auto-updates the latest papers from arXiv with the keywords "Causal In
 
 </body>
 </html>
-<!-- This is a placeholder for the actual JavaScript code that fetches the latest papers from arXiv. -->
