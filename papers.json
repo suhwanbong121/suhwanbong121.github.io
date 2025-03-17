@@ -3,7 +3,7 @@
         "title": "The Curse of Conditions: Analyzing and Improving Optimal Transport for\n  Conditional Flow-Based Generation",
         "authors": "Ho Kei Cheng, Alexander Schwing",
         "summary": "  Minibatch optimal transport coupling straightens paths in unconditional flow\nmatching. This leads to computationally less demanding inference as fewer\nintegration steps and less complex numerical solvers can be employed when\nnumerically solving an ordinary differential equation at test time. However, in\nthe conditional setting, minibatch optimal transport falls short. This is\nbecause the default optimal transport mapping disregards conditions, resulting\nin a conditionally skewed prior distribution during training. In contrast, at\ntest time, we have no access to the skewed prior, and instead sample from the\nfull, unbiased prior distribution. This gap between training and testing leads\nto a subpar performance. To bridge this gap, we propose conditional optimal\ntransport C^2OT that adds a conditional weighting term in the cost matrix when\ncomputing the optimal transport assignment. Experiments demonstrate that this\nsimple fix works with both discrete and continuous conditions in\n8gaussians-to-moons, CIFAR-10, ImageNet-32x32, and ImageNet-256x256. Our method\nperforms better overall compared to the existing baselines across different\nfunction evaluation budgets. Code is available at\nhttps://hkchengrex.github.io/C2OT\n",
-        "link": "http://arxiv.org/abs/2503.10636v1"
+        "link": "http://arxiv.org/abs/2503.10636v2"
     },
     {
         "title": "Distilling Diversity and Control in Diffusion Models",
