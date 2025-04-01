@@ -7,8 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-<center><img src="../images/SuhwanBong2.jpeg" width="500"></center>
+<center><img src="../images/SuhwanBong2.jpeg" width="400"></center>
 
+<br>
 Hi, I'm **Suhwan Bong**!
 
 I am a biostatistics PhD student at the Harvard T.H. Chan School of Public Health. My primary research interests lie in the broad field of causal inference and its applications in biomedical data. I am passionate about developing and applying statistical methods to uncover meaningful insights from complex datasets, aiming to contribute to advancements in public health.
