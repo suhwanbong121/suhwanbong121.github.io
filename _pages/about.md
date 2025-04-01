@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<center><img src="../images/SuhwanBong2.jpeg" width="250"></center>
+<center><img src="../images/SuhwanBong2.jpeg" width="500"></center>
 
 Hi, I'm **Suhwan Bong**!
 
