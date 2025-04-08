@@ -29,4 +29,15 @@ layout: null
 
     </url>
     {% endfor %}
+
+    {% for page in site.pages %}
+        {% if page.sitemap != false and page.url != "/sitemap.xml" %}
+        <url>
+            <loc>{{ site.url }}{{ page.url }}</loc>
+            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.4</priority>
+        </url>
+        {% endif %}
+    {% endfor %}
 </urlset>
