@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Suhwan Bong"
+title: #Suhwan Bong
 author_profile: true
 redirect_from: 
   - /about/
