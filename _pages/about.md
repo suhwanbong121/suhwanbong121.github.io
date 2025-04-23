@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: ""
+title: "Suhwan Bong"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-<center><img src="../images/SuhwanBong2.jpeg" width="400"></center>
+<center><img src="../images/SuhwanBong2.jpeg" width="400" alt="Suhwan Bong"></center>
 
 <br>
 Hi, I'm **Suhwan Bong**!
