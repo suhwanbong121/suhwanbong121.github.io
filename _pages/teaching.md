@@ -5,13 +5,13 @@ permalink: /teaching/
 author_profile: true
 ---
 
-Teaching Fellow (TF), Department of Biostatistics, Harvard University
+Teaching Fellow (TF), Harvard University
 ------
 - Fall 2025 : *Introduction to Statistical Methods (BST 201)*
 
 <br>
 
-Teaching Assistant (TA), Department of Statistics, Seoul National University
+Teaching Assistant (TA), Seoul National University
 ------
 - Spring 2024 : *Causal Inference (M1399.001200)*
 - Fall 2023 : *Data Analysis and Lab. (M1399.001400)*
