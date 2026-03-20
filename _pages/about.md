@@ -30,4 +30,4 @@ For further details about my academic background and research, please refer to m
 
 Contact
 ------
-Feel free to reach out via email at suhwanbong@g.harvard.edu!
+Feel free to reach out via email: suhwanbong@g.harvard.edu.
