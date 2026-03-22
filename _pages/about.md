@@ -12,7 +12,7 @@ redirect_from:
 <br>
 Hi, I'm **Suhwan Bong**!
 
-I am a Ph.D. candidate in Biostatistics at Harvard University advised by [Prof. Francesca Dominici](https://hsph.harvard.edu/profile/francesca-dominici/). My research interests span a broad spectrum of causal inference methodologies, with a primary focus on developing novel statistical frameworks. I am also passionate about leveraging AI/ML methods to address complex challenges in public health and data science.
+I am a Ph.D. candidate in Biostatistics at Harvard University advised by [Prof. Francesca Dominici](https://hsph.harvard.edu/profile/francesca-dominici/). My research interests span a broad spectrum of causal inference methodologies, with a primary focus on developing novel statistical frameworks. I am also passionate about leveraging statistical and machine learning methods to address complex challenges in data science and public health.
 
 I earned my Master’s degree in Statistics from Seoul National University (SNU), where I was mentored by [Prof. Kwonsang Lee](https://causal.snu.ac.kr/). Prior to my graduate studies, I also completed my Bachelor’s degree in Statistics and Mathematics at SNU.
 
