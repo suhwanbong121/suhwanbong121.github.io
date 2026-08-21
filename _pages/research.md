@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-Publications
+## Publications
 
 ------
 
@@ -21,7 +21,7 @@ Publications
 
 <br>
 
-Presentations
+## Presentations
 
 ------
 
