@@ -7,7 +7,7 @@ author_profile: true
 
 Publications
 
-**------**
+------
 
 1. Eun, Y.<sup>†</sup>, **Bong, S.<sup>†</sup>**, Koh, H. Y., Trousdale, R. K., Cho, Y. M., Jang, Y., and Lee, S.-T. (2026). **Semaglutide and risk of adult-onset seizure: A target trial emulation.** *Neurology*, 107(1). [link][seizure]
 
@@ -23,15 +23,15 @@ Publications
 
 Presentations
 
-**------**
+------
 
-1. **Bong, S.**, Shin, H., Bargagli-Stoffi, F. J., and Dominici, F. **Generalized causal rule ensemble.** American Causal Inference Conference, Salt Lake City, Utah, May 2026.
+1. Generalized causal rule ensemble. American Causal Inference Conference, Salt Lake City, Utah, May 2026.
 
-1. **Bong, S.**, Lee, K., and Dominici, F. **Differential recall bias in estimating treatment effects in observational studies.** 6th International Conference on Econometrics and Statistics, Organized Invited Session, Tokyo, Japan, Aug. 2023.
+1. Differential recall bias in estimating treatment effects in observational studies. 6th International Conference on Econometrics and Statistics, Organized Invited Session, Tokyo, Japan, Aug. 2023.
 
-1. **Bong, S.** and Lee, K. **Local causal effects with continuous exposures.** Korean Statistical Society Conference, Busan, South Korea, Dec. 2023.
+1. Local causal effects with continuous exposures. Korean Statistical Society Conference, Busan, South Korea, Dec. 2023.
 
-1. **Bong, S.**, Lee, K., and Dominici, F. **Differential recall bias in estimating treatment effects in observational studies.** Korean Statistical Society Conference, Jeju, South Korea, Dec. 2022. *Outstanding Poster Presentation Award.*
+1. Differential recall bias in estimating treatment effects in observational studies. Korean Statistical Society Conference, Jeju, South Korea, Dec. 2022. *Outstanding Poster Presentation Award.*
 
 
 [seizure]: https://doi.org/10.1212/WNL.0000000000218174
