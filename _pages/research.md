@@ -11,7 +11,7 @@ author_profile: true
 
 1. Eun, Y.<sup>†</sup>, **Bong, S.<sup>†</sup>**, Koh, H. Y., Trousdale, R. K., Cho, Y. M., Jang, Y., and Lee, S.-T. (2026). **Semaglutide and risk of adult-onset seizure: A target trial emulation.** *Neurology*, 107(1). [link][seizure]
 
-1. Lopez, D., Cao, H., **Bong, S.**, Lee, J. D., Lee, J.-H., and Lee, S. J. (2026). **Evaluation of interproximal contact loss and tactile sensitivity thresholds around implant-supported restorations: An 18-month follow-up study.** *Journal of Prosthodontics*. [link][implant]
+1. Lopez, D., Cao, H., **Bong, S.**, Lee, J. D., Lee, J.-H., and Lee, S. J. (2026). **Early changes in interproximal contact and tactile sensitivity around implant-supported restorations: An 18-month prospective study.** *Journal of Prosthodontics*. [link][implant]
 
 1. **Bong, S.** and Lee, K. (2024). **Local causal effects with continuous exposures: A matching estimator for the average causal derivative effect.** *arXiv preprint*. [link][local]
 
