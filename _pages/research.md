@@ -5,20 +5,6 @@ permalink: /research/
 author_profile: true
 ---
 
----
-layout: archive
-title: "Research"
-permalink: /research/
-author_profile: true
----
-
----
-layout: archive
-title: "Research"
-permalink: /research/
-author_profile: true
----
-
 ## Published & Accepted
 
 1. **Bong, S.** (2026). **Strategic Causal Policy Learning with Manipulable Eligibility.** *Advances in Neural Information Processing Systems 39 (NeurIPS 2026).* Accepted (poster).
